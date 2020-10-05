@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--=====================================================================-->
+<html lang="en">
+<!--=====================================================================-->
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Parallelistix,Davood Mohajerani">
+  <meta name="keywords" content=
+  "Parallelistix,FFT,HPC,GPU,CUDA,LLVM,Compiler,Optimization">
+  <title>Portfolio@Parallelistix</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/portfolio.css" rel="stylesheet">
+  <link href="./font-awesome/css/font-awesome.min.css" rel=
+  "stylesheet" type="text/css">
+  <link href="./academicons-1.8.0/css/academicons.css" rel=
+  "stylesheet">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/portfolio.css" rel="stylesheet">
+  <link href="../font-awesome/css/font-awesome.min.css" rel=
+  "stylesheet" type="text/css">
+  <link href="../academicons-1.8.0/css/academicons.css" rel=
+  "stylesheet">
+  <!--            <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap"
+  rel="stylesheet">
+  <!--            <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">-->
+  <!--            <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=UA-143748518-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-143748518-1');
+  </script>
+  <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<!--=====================================================================-->
+<body>
+  <!--=================================================================-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="navbar-header navbar-left">
+          <button type="button" class=
+          "btn btn-lg navbar-toggle collapsed" data-toggle=
+          "collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar"><span class=
+          "glyphicon glyphicon-list"></span></button>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      <!-- ######################################################################-->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="col-sm-7">
+            <ul class="nav navbar-nav" style="margin-left:0.25em">
+              <li class="nav-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="active nav-item">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="./publications.html">Publications</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 text-right" style=
+          "margin-left:-4.5em">
+            <div class="form-inline" style=
+            "margin-right:0%; margin-top:2%;">
+              <form action="https://www.google.com/search" class=
+              "searchform" method="get" name="searchform" target=
+              "_blank" id="searchform">
+                <input name="sitesearch" type="hidden" value=
+                "http://parallelistix.github.io">
+                <input autocomplete="on" class=
+                "form-control search" name="q" placeholder=
+                "parallelistix (via Google.com)" required=
+                "required" type="text"> 
+                <!--      <div class="input-group-append">-->
+                 <button class="btn" type="submit">Search</button> 
+                <!--      </div>-->
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--                    <div class="col-sm-2"></div>-->
+      </div>
+    </div>
+  </nav>
+  <!--=================================================================-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <header id="top" class="header">
+          <div class="text-vertical-center">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="text-primary">Portfolio</h1>
+            <hr class="title">
+            <h2 class="text-center"><i class=
+            "fa fa-envelope-o fa-fw"></i> mohajerani<i class=
+            "fa fa-circle" style="font-size: 15%;"></i>d<i class=
+            "fa fa-at fa-fw"></i>gmail<i class="fa fa-circle"
+            style="font-size: 15%;"></i>com</h2>
+          </div>
+        </header><br>
+        <br>
+        <!--<div class="service-item">
+<!==    <p> 
+<!==    To be completed.
+<!==    </p>
+<!==</div>
+<!==<hr>-->
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="row">
+          <!--    <div class="col-sm-0"></div>-->
+          <div class="col-sm-12" id="bigmult">
+            <div class="gallery-item text-left">
+              <a class="text-primary" href=
+              "portfolio/entries/phd_research/07_bigint_mult/bigmult.html">
+              <h1 class="text-center"><strong>Arbitrary-precision
+              Integer Multiplication on GPUs</strong></h1></a>
+              <h4></h4>
+              <p class="text-center text-danger">In progress
+              ...</p>
+              <p class="text-primary"><b>Joint work with Marc
+              Moreno Maza (moreno@csd.uwo.ca)</b></p>
+              <p>In this work we present a new parallel algorithm
+              for arbitrary-precision integer multiplication on
+              CUDA-enabled GPUs. This work also includes complexity
+              analysis, experimental results, and critical
+              implementation tricks.</p>
+            </div>
+          </div><!--    <div class="col-sm-1"></div>-->
+        </div>
+        <!-- #######################################################################-->
+        <div class="row">
+          <!--    <div class="col-sm-0"></div>-->
+          <div class="col-sm-12" id="bigfft_gpu_u32">
+            <div class="gallery-item text-left">
+              <a class="text-primary" href=
+              "portfolio/entries/phd_research/06_bigfft_gpu_u32/bigfft_gpu_u32.html">
+              <h1 class="text-center"><strong>Big Prime Field FFT
+              on GPUs: 32-bit Implementation</strong></h1></a>
+              <h4></h4>
+              <p class="text-center text-danger">In progress
+              ...</p>
+              <p class="text-primary"><b>Joint work with</b></p>
+              <ul class="text-primary">
+                <li><b>Svyatoslav Covanov
+                (svyatoslav.covanov@loria.fr)</b></li>
+                <li><b>Marc Moreno Maza
+                (moreno@csd.uwo.ca)</b></li>
+              </ul>
+              <p></p>
+              <p>Our original implementation was entirely based on
+              64-bit integer arithmetic on CUDA-enabled GPUs which
+              later on proved to be detrimental to the performance.
+              Even though NVIDIA GPUs support 64-bit integer
+              arithmetic, however, such instructions are not
+              intrinsic. Instead, such instructions are emulated
+              meaning that the compiler breaks down a 64-bit
+              instruction to a sequence of 32-bit instructions. In
+              case of FFT, this leads to serious consequences such
+              as lower memory efficiency, lower ILP, lower IPC,
+              higher register pressure, and lower occupancy.
+              Moreover, the radix $r$ in the initial implementation
+              was supposed to be sparse with only two bits set (due
+              to some initial assumptions that now have been
+              relaxed). To remove the bottlenecks, we have
+              reimplemented the whole project based on 32-bit
+              integer arithmetic in CUDA, also, we have resolved
+              the the restrictions for radix $r$. We are currently
+              evaluating the performance of the 32-bit
+              implementation and will publish the benchmarking
+              results soon.</p>
+            </div>
+          </div><!--    <div class="col-sm-1"></div>-->
+        </div>
+        <!-- #######################################################################-->
+        <div class="row">
+          <!--    <div class="col-sm-0"></div>-->
+          <div class="col-sm-12" id="klaraptor">
+            <div class="gallery-item text-left">
+              <a class="text-primary" href=
+              "portfolio/entries/phd_research/05_klaraptor/klaraptor.html">
+              <h1 class="text-center">
+              <strong>KLARAPTOR</strong></h1></a>
+              <h4></h4>
+              <p class="text-primary"><b>Joint work with</b></p>
+              <ul class="text-primary">
+                <li><b>Alexander Brandt (abrandt5@uwo.ca)</b></li>
+                <li><b>Marc Moreno Maza
+                (moreno@csd.uwo.ca)</b></li>
+                <li><b>Linxiao Wang (lwang739@uwo.ca)</b></li>
+              </ul>
+              <p></p>
+              <p>KLARAPTOR is a compile-time tool for CUDA programs
+              which constructs and evaluates a rational program
+              encoding the MWP-CWP performance model to optimize
+              the program’s performance. The tool dynamically
+              chooses a kernel’s launch parameters (thread block
+              configuration) which optimize its performance for the
+              data and hardware parameters of the current kernel
+              invocation.<br>
+              <br>
+              KLARAPTOR is built in the C programming language
+              making use of</p>
+              <ol>
+                <li>
+                  <a href=
+                  "https://docs.nvidia.com/cuda/cupti/index.html">NVIDIA
+                  CUPTI API</a> to measure low-level metrics,
+                </li>
+                <li>
+                  <a href=
+                  "http://www.netlib.org/lapack/">LAPACK</a> for
+                  linear algebra,
+                </li>
+                <li>
+                  <a href="http://bpaslib.org/">BPAS (Basic
+                  Polynomial Algebra Subprograms)</a> for efficient
+                  rational functions, and
+                </li>
+                <li>
+                  <a href=
+                  "https://llvm.org/docs/WritingAnLLVMPass.html">LLVM
+                  Pass Framework</a> to connect the constructed
+                  rational program and the CUDA program.
+                </li>
+              </ol>
+              <p></p>
+              <ul>
+                <li>Source code published under GPL-3.0
+                License:<br>
+                  <a href="https://github.com/orcca-uwo/KLARAPTOR"
+                  rel=
+                  "nofollow">https://github.com/orcca-uwo/KLARAPTOR</a>
+                </li>
+                <li>More details in the following article:<br>
+                  <a href="https://arxiv.org/abs/1911.02373" rel=
+                  "nofollow">https://arxiv.org/abs/1911.02373</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--    <div class="col-sm-1"></div>-->
+        </div>
+        <!-- #######################################################################-->
+        <div class="row">
+          <!--    <div class="col-sm-0"></div>-->
+          <div class="col-sm-12" id="smallfft_cpu">
+            <div class="gallery-item text-left">
+              <a class="text-primary" href=
+              "portfolio/entries/phd_research/04_smallfft_cpu/smallfft_cpu.html">
+              <h1 class="text-center"><strong>Small Prime Field FFT
+              on Multicore Porcessors</strong></h1></a>
+              <h4></h4>
+              <p>Parallel Cilk implementation of six-step FFT over
+              $\mathbb{Z}/p\mathbb{Z}$ for machine word size primes
+              $p$ (64-bits wide).</p>
+              <ul>
+                <li>Source code published as part of <a href=
+                "http://bpaslib.org/">BPAS library</a> under
+                GPL-3.0 License:<br>
+                  <a href=
+                  "https://github.com/orcca-uwo/BPAS/tree/master/include/FiniteFields">
+                  https://github.com/orcca-uwo/BPAS/tree/master/include/FiniteFields</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--    <div class="col-sm-1"></div>-->
+        </div>
+        <!-- #######################################################################-->
+        <div class="row">
+          <!--    <div class="col-sm-0"></div>-->
+          <div class="col-sm-12" id="bigfft_cpu">
+            <div class="gallery-item text-left">
+              <a class="text-primary" href=
+              "portfolio/entries/phd_research/03_bigfft_cpu/bigfft_cpu.html">
+              <h1 class="text-center"><strong>Big Prime Field FFT
+              on Multicore Processors</strong></h1></a>
+              <h4></h4>
+              <p class="text-primary"><b>Joint work with</b></p>
+              <ul class="text-primary">
+                <li><b>Svyatoslav Covanov
+                (svyatoslav.covanov@loria.fr)</b></li>
+                <li><b>Marc Moreno Maza
+                (moreno@csd.uwo.ca)</b></li>
+                <li><b>Linxiao Wang (lwang739@uwo.ca)</b></li>
+              </ul>
+              <p></p>
+              <p>We report on a multi-threaded implementation of
+              Fast Fourier Transforms over generalized Fermat prime
+              fields. This work extends our previous study on GPUs
+              to multi-core processors. In this new context, we
+              overcome the less fine control of hardware resources
+              by successively using FFT in support of the
+              multiplication in those fields. We obtain favorable
+              speedup factors (up to 6.9x on a 6-core, 12 threads
+              node, and 4.3x on a 4-core, 8 threads node) of our
+              parallel implementation compared to the serial
+              implementation for the overall application thanks to
+              the low memory footprint and the sharp control of
+              arithmetic instructions of our implementation of
+              generalized Fermat prime fields.</p>
+              <ul>
+                <li>Source code published as part of <a href=
+                "http://bpaslib.org/">BPAS library</a> under
+                GPL-3.0 License:<br>
+                  <a href=
+                  "https://github.com/orcca-uwo/BPAS/tree/master/include/FiniteFields">
+                  https://github.com/orcca-uwo/BPAS/tree/master/include/FiniteFields</a>
+                </li>
+                <li>More details in the following article:<br>
+                  <a href=
+                  "https://dl.acm.org/doi/10.1145/3326229.3326273">https://dl.acm.org/doi/10.1145/3326229.3326273</a>
+                </li>
+                <li>Slides: <a href=
+                "publications/publications_misc/bigfft_cpu_issac_2019.pdf">
+                  ISSAC 2019</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--    <div class="col-sm-1"></div>-->
+        </div>
+        <!-- #######################################################################-->
+        <div class="row">
+          <!--    <div class="col-sm-0"></div>-->
+          <div class="col-sm-12" id="bigfft_gpu">
+            <div class="gallery-item text-left">
+              <a class="text-primary" href=
+              "portfolio/entries/phd_research/02_bigfft_gpu/bigfft_gpu.html">
+              <h1 class="text-center"><strong>Big Prime Field FFT
+              on GPUs</strong></h1></a>
+              <h4></h4>
+              <p class="text-primary"><b>Joint work with</b></p>
+              <ul class="text-primary">
+                <li><b>Liangyu Chen
+                (lychen@sei.ecnu.edu.cn)</b></li>
+                <li><b>Svyatoslav Covanov
+                (svyatoslav.covanov@loria.fr)</b></li>
+                <li><b>Marc Moreno Maza
+                (moreno@csd.uwo.ca)</b></li>
+              </ul>
+              <p></p>
+              <p>We consider prime fields of large characteristic
+              $\mathbb{Z}/p\mathbb{Z}$ where $p$ fits on $k$
+              machine words and $k$ is a power of 2. When the
+              characteristic of these fields is restricted to a
+              subclass of the gen- eralized Fermat numbers, we show
+              that arithmetic operations in such fields offer
+              attractive performance, both in terms of algebraic
+              complexity and parallelism. In particular, these
+              operations can be vectorized, leading to efficient
+              implementation of fast Fourier transforms on graphics
+              processing units. This work demonstrates the
+              potential of GPUs and their huge com- putational
+              capacity for tackling an essential computational
+              algebra problem, that is, directly computing FFT over
+              large prime fields as a competitive alternative to
+              modular computation of FFT based on the Chinese
+              Remainder Theorem (CRT).</p>
+              <ul>
+                <li>Source code published as part of <a href=
+                "http://cumodp.org/">CUMODP library</a> under
+                GPL-3.0 License:<br>
+                  <a href=
+                  "http://www.cumodp.org/downloads.html">http://www.cumodp.org/downloads.html</a>
+                </li>
+                <li>More details in the following article:<br>
+                  <a href=
+                  "https://dl.acm.org/doi/10.1145/3087604.3087657">https://dl.acm.org/doi/10.1145/3087604.3087657</a>
+                </li>
+                <li>Slides: <a href=
+                "publications/publications_misc/bigfft_issac_2017.pdf">
+                  ISSAC 2017</a> and <a href=
+                  "publications/publications_misc/bigfft_gpu_cascon_2018.pdf">
+                  CASCON 2018</a>
+                </li>
+              </ul>
+            </div>
+          </div><!--    <div class="col-sm-1"></div>-->
+        </div>
+        <!-- #######################################################################-->
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  <!--=================================================================-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <p class="big"></p>
+          <h3><strong>Contact Info:</strong></h3>
+          <p></p>
+          <p><i class="fa fa-envelope-o fa-fw"></i>
+          mohajerani<i class="fa fa-circle" style=
+          "font-size: 15%;"></i>d<i class=
+          "fa fa-at fa-fw"></i>gmail<i class="fa fa-circle" style=
+          "font-size: 15%;"></i>com<br></p>
+          <ul class="list-inline">
+            <!-- ################################### -->
+            <li>
+              <a href="https://github.com/parallelistix" target=
+              "_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href=
+              "https://scholar.google.com/citations?user=14e042YAAAAJ&amp;hl=en"
+              target="_blank"><i class=
+              "ai ai-google-scholar-square ai-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="https://twitter.com/parallelistix" target=
+              "_blank"><i class=
+              "fa fa-twitter fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="http://www.linkedin.com/in/davoodmohajerani"
+              target="_blank"><i class=
+              "fa fa-linkedin fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <!--        <li>
+<!==            <a href="skype:?userinfo"
+<!==                    target="_blank"><i class="fa fa-skype fa-fw fa-2x"></i></a>
+<!==        </li>-->
+            <!-- ################################### -->
+          </ul>
+          <hr class="small">
+          <p class="text-center text-primary h4">Copyright © 2020,
+          Davood Mohajerani</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--=================================================================-->
+  <script src="js/jquery.js">
+  </script> 
+  <script src="js/bootstrap.min.js">
+  </script>
+  <!--=====================================================================-->
+  <!--=====================================================================-->
+</body>
+</html>

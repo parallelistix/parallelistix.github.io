@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--=====================================================================-->
+<html lang="en">
+<!--=====================================================================-->
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Parallelistix,Davood Mohajerani">
+  <meta name="keywords" content=
+  "Parallelistix,FFT,HPC,GPU,CUDA,LLVM,Compiler,Optimization">
+  <title>Parallelistix</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/portfolio.css" rel="stylesheet">
+  <link href="./font-awesome/css/font-awesome.min.css" rel=
+  "stylesheet" type="text/css">
+  <link href="./academicons-1.8.0/css/academicons.css" rel=
+  "stylesheet">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/portfolio.css" rel="stylesheet">
+  <link href="../font-awesome/css/font-awesome.min.css" rel=
+  "stylesheet" type="text/css">
+  <link href="../academicons-1.8.0/css/academicons.css" rel=
+  "stylesheet">
+  <!--            <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap"
+  rel="stylesheet">
+  <!--            <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">-->
+  <!--            <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=UA-143748518-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-143748518-1');
+  </script>
+  <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<!--=====================================================================-->
+<body>
+  <!--=================================================================-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="navbar-header navbar-left">
+          <button type="button" class=
+          "btn btn-lg navbar-toggle collapsed" data-toggle=
+          "collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar"><span class=
+          "glyphicon glyphicon-list"></span></button>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      <!-- ######################################################################-->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="col-sm-7">
+            <ul class="nav navbar-nav" style="margin-left:0.25em">
+              <li class="active nav-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="./publications.html">Publications</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 text-right" style=
+          "margin-left:-4.5em">
+            <div class="form-inline" style=
+            "margin-right:0%; margin-top:2%;">
+              <form action="https://www.google.com/search" class=
+              "searchform" method="get" name="searchform" target=
+              "_blank" id="searchform">
+                <input name="sitesearch" type="hidden" value=
+                "http://parallelistix.github.io">
+                <input autocomplete="on" class=
+                "form-control search" name="q" placeholder=
+                "parallelistix (via Google.com)" required=
+                "required" type="text"> 
+                <!--      <div class="input-group-append">-->
+                 <button class="btn" type="submit">Search</button> 
+                <!--      </div>-->
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--                    <div class="col-sm-2"></div>-->
+      </div>
+    </div>
+  </nav>
+  <!--=================================================================-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <header id="top" class="header">
+          <div class="col-sm-2 justify-content-center"><img src=
+          "./img/img.jpg" class="img-circle" style=
+          "width:8em; margin-top:90%;"></div>
+          <div class="col-sm-8 text-vertical-center">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="text-primary">Davood Mohajerani</h1>
+            <hr class="title">
+            <h2 class="text-center"><i class=
+            "fa fa-envelope-o fa-fw"></i> mohajerani<i class=
+            "fa fa-circle" style="font-size: 15%;"></i>d<i class=
+            "fa fa-at fa-fw"></i>gmail<i class="fa fa-circle"
+            style="font-size: 15%;"></i>com</h2>
+          </div>
+        </header>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="text-center">
+          <hr class="title">
+          <ul class="list-inline">
+            <!-- ################################### -->
+            <li>
+              <a href="https://github.com/parallelistix" target=
+              "_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href=
+              "https://scholar.google.com/citations?user=14e042YAAAAJ&amp;hl=en"
+              target="_blank"><i class=
+              "ai ai-google-scholar-square ai-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="https://twitter.com/parallelistix" target=
+              "_blank"><i class=
+              "fa fa-twitter fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="http://www.linkedin.com/in/davoodmohajerani"
+              target="_blank"><i class=
+              "fa fa-linkedin fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <!--        <li>
+<!==            <a href="skype:?userinfo"
+<!==                    target="_blank"><i class="fa fa-skype fa-fw fa-2x"></i></a>
+<!==        </li>-->
+            <!-- ################################### -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="row">
+          <p class="boxed">I am a software developer/researcher in
+          the field of <b>high performance computing</b>. I have
+          experience in the design, implementation, and
+          optimization of parallel algorithms on CPUs (Cilk/OpenMP)
+          and GPUs (CUDA) for several problems in computational
+          algebra (primarily used in solving systems of polynomial
+          equations and cryptography).</p>
+          <ul style="margin:0.75em;">
+            <li>
+              <a href="./home_misc/resume_September_2020.pdf"
+              class="text-danger"><b>My resume is available
+              here.</b></a>
+            </li>
+            <li>
+              <a href="./home_misc/cv_September_2020.pdf" class=
+              "text-danger"><b>My CV is available here.</b></a>
+            </li>
+            <li>Please find the complete list of software projects
+            I have contributed to <a href=
+            "portfolio.html">here.</a>
+            </li>
+            <li>
+              <p>Please find the complete list of my talks and
+              publications <a href=
+              "publications.html">here.</a></p>
+            </li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="service-item">
+          <div class="text-center h1">
+            Interests
+          </div>
+          <hr class="small">
+          <ul>
+            <li>Performance portability, optimizing compilers, and
+            automatic parallelization.</li>
+            <li>Design, implementation, and optimization of
+            parallel algorithms for CPUs, GPUs, and
+            accelerators.</li>
+            <li>Computational number theory and parallel
+            arbitrary-precision integer arithmetic.</li>
+          </ul>
+        </div>
+        <!-- ###################################################################### -->
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="service-item">
+          <div class="text-center h1">
+            Background
+          </div>
+          <hr class="small">
+          <div class="text-left">
+            <!--    An overview of recent projects:-->
+            <strong>Skills:</strong>
+            <ul>
+              <li>(C/C++/CUDA/Cilk/OpenMP + Python/Bash + LLVM)
+              $\subset$ Linux</li>
+              <li>Experienced in developing high performance
+              mathematical software.</li>
+              <li>Strong verbal and written communication
+              skills.</li>
+            </ul><strong>Education:</strong>
+            <ul style="font-size:100%">
+              <li>Ph.D. candidate in Computer Science at <a href=
+              "http://www.orcca.on.ca/" target="_blank">ORCCA
+              Lab,</a> <a href="http://uwo.ca" target=
+              "_blank">University of Western Ontario</a>
+              (2017-present)<br>
+                Supervisor: Professor <a href=
+                "http://www.csd.uwo.ca/~moreno/" target=
+                "_blank"><b>Marc Moreno Maza</b></a>
+              </li>
+              <li>M.Sc. in Computer Science at <a href=
+              "http://www.orcca.on.ca/" target="_blank">ORCCA
+              Lab,</a> <a href="http://uwo.ca" target=
+              "_blank">University of Western Ontario</a>
+              (2015-2016)<br>
+                Thesis: <a href="https://ir.lib.uwo.ca/etd/4365/"
+                target="_blank"><b>Computing FFTs over Large Prime
+                Fields and their Implementation on GPUs</b></a>
+              </li>
+              <li>B.Sc. in Computer Engineering (Software), Isfahan
+              University of Technology, Iran (2010-2015)</li>
+            </ul>
+          </div>
+        </div>
+        <!-- ###################################################################### -->
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="service-item">
+          <div class="text-center h1">
+            Software
+          </div>
+          <hr class="small">
+          <div class="text-left">
+            <p>Please find the complete list of software projects I
+            have contributed to <a href=
+            "portfolio.html">here.</a></p>An overview of recent
+            projects:
+            <ul class="linkset">
+              <li>
+                <a href="http://www.cumodp.org/" target="_blank">
+                <!--                    <p>-->
+                 <strong>CUMODP:</strong> Developing parallel
+                algorithms for a number of algebraic operations in
+                <strong>CUDA</strong>.</a>
+              </li>
+              <li>
+                <a href="https://github.com/orcca-uwo/KLARAPTOR/"
+                target="_blank"><strong>KLARAPTOR:</strong> Kernel
+                Launch Rational Program Estimator is a tool for
+                finding optimal CUDA kernel launch parameters.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ###################################################################### -->
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <div class="service-item">
+          <div class="h1 text-center">
+            Teaching experience
+          </div>
+          <hr class="small">
+          <!-- ################################################# -->I
+          have been teaching assistant for the following courses:
+          <ul>
+            <li>
+              <a href=
+              "https://www.westerncalendar.uwo.ca/Courses.cfm?CourseAcadCalendarID=MAIN_011511_1&amp;SelectedCalendar=Live&amp;ArchiveID=#34193">
+              CS 3350 - Computer Organization</a> (UWO: Winter '17,
+              Winter '18, Winter '20)
+            </li>
+            <li>
+              <a href=
+              "https://www.westerncalendar.uwo.ca/Courses.cfm?CourseAcadCalendarID=MAIN_024784_1&amp;SelectedCalendar=Live&amp;ArchiveID=#70875">
+              CS 2214 - Discrete Structures for Computing</a> (UWO:
+              Winter '19, Fall '19)
+            </li>
+            <li>
+              <a href=
+              "https://www.westerncalendar.uwo.ca/Courses.cfm?CourseAcadCalendarID=MAIN_006440_1&amp;SelectedCalendar=Live&amp;ArchiveID=#34169">
+              CS 1026 - Computer Science Fundamentals I</a> (UWO:
+              Fall '15, Fall '17, Fall '18, Spring '19)
+            </li>
+            <li>
+              <a href=
+              "https://www.westerncalendar.uwo.ca/Courses.cfm?CourseAcadCalendarID=MAIN_026490_1&amp;SelectedCalendar=Live&amp;ArchiveID=#34172">
+              CS 1046 - Inotroduction to Programming Using
+              JavaScript</a> (UWO: Winter '16)
+            </li>
+            <li>
+              <a href=
+              "https://www.westerncalendar.uwo.ca/Courses.cfm?CourseAcadCalendarID=MAIN_017018_1&amp;SelectedCalendar=Live&amp;ArchiveID=#34171">
+              CS 1032 - Information Systems and Design</a> (UWO:
+              Fall '16)
+            </li>
+            <li>
+              <a href="">Digital Logic Design</a> (IUT: Fall 2012,
+              Spring 2013, Fall 2013, Winter 2014)
+            </li>
+            <li>
+              <a href="">Operating System (system programming in
+              Minix) Lab.</a> (IUT: Fall 2013, Spring 2014)
+            </li>
+          </ul><!-- ################################ -->
+          I also have been instructor for the following events:
+          <ul>
+            <li>
+              <a href=
+              "./home_misc/linuxEssentials_Workshop_Handout.pdf">Essentials
+              of Linux</a> (IUT, December 2014)
+            </li>
+            <li>Workshop on “Parallel Programming in CUDA” (IUT,
+            May 2014)</li>
+          </ul>
+          <!-- ################################################# -->
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  <!--=================================================================-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <p class="big"></p>
+          <h3><strong>Contact Info:</strong></h3>
+          <p></p>
+          <p><i class="fa fa-envelope-o fa-fw"></i>
+          mohajerani<i class="fa fa-circle" style=
+          "font-size: 15%;"></i>d<i class=
+          "fa fa-at fa-fw"></i>gmail<i class="fa fa-circle" style=
+          "font-size: 15%;"></i>com<br></p>
+          <ul class="list-inline">
+            <!-- ################################### -->
+            <li>
+              <a href="https://github.com/parallelistix" target=
+              "_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href=
+              "https://scholar.google.com/citations?user=14e042YAAAAJ&amp;hl=en"
+              target="_blank"><i class=
+              "ai ai-google-scholar-square ai-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="https://twitter.com/parallelistix" target=
+              "_blank"><i class=
+              "fa fa-twitter fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="http://www.linkedin.com/in/davoodmohajerani"
+              target="_blank"><i class=
+              "fa fa-linkedin fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <!--        <li>
+<!==            <a href="skype:?userinfo"
+<!==                    target="_blank"><i class="fa fa-skype fa-fw fa-2x"></i></a>
+<!==        </li>-->
+            <!-- ################################### -->
+          </ul>
+          <hr class="small">
+          <p class="text-center text-primary h4">Copyright © 2020,
+          Davood Mohajerani</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--=================================================================-->
+  <script src="js/jquery.js">
+  </script> 
+  <script src="js/bootstrap.min.js">
+  </script>
+  <!--=====================================================================-->
+  <!--=====================================================================-->
+</body>
+</html>

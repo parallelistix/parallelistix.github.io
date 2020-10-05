@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--=====================================================================-->
+<html lang="en">
+<!--=====================================================================-->
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Parallelistix,Davood Mohajerani">
+  <meta name="keywords" content=
+  "Parallelistix,FFT,HPC,GPU,CUDA,LLVM,Compiler,Optimization">
+  <title>Blog@Parallelistics</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/portfolio.css" rel="stylesheet">
+  <link href="./font-awesome/css/font-awesome.min.css" rel=
+  "stylesheet" type="text/css">
+  <link href="./academicons-1.8.0/css/academicons.css" rel=
+  "stylesheet">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/portfolio.css" rel="stylesheet">
+  <link href="../font-awesome/css/font-awesome.min.css" rel=
+  "stylesheet" type="text/css">
+  <link href="../academicons-1.8.0/css/academicons.css" rel=
+  "stylesheet">
+  <!--            <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap"
+  rel="stylesheet">
+  <!--            <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">-->
+  <!--            <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=UA-143748518-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-143748518-1');
+  </script>
+  <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+<!--=====================================================================-->
+<body>
+  <!--=================================================================-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="navbar-header navbar-left">
+          <button type="button" class=
+          "btn btn-lg navbar-toggle collapsed" data-toggle=
+          "collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar"><span class=
+          "glyphicon glyphicon-list"></span></button>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      <!-- ######################################################################-->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="col-sm-7">
+            <ul class="nav navbar-nav" style="margin-left:0.25em">
+              <li class="nav-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="active nav-item">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="./publications.html">Publications</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 text-right" style=
+          "margin-left:-4.5em">
+            <div class="form-inline" style=
+            "margin-right:0%; margin-top:2%;">
+              <form action="https://www.google.com/search" class=
+              "searchform" method="get" name="searchform" target=
+              "_blank" id="searchform">
+                <input name="sitesearch" type="hidden" value=
+                "http://parallelistix.github.io">
+                <input autocomplete="on" class=
+                "form-control search" name="q" placeholder=
+                "parallelistix (via Google.com)" required=
+                "required" type="text"> 
+                <!--      <div class="input-group-append">-->
+                 <button class="btn" type="submit">Search</button> 
+                <!--      </div>-->
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--                    <div class="col-sm-2"></div>-->
+      </div>
+    </div>
+  </nav>
+  <!--=================================================================-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left">
+        <header id="top" class="header">
+          <div class="text-vertical-center">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="text-primary">Blog</h1>
+            <hr class="title">
+            <h2 class="text-center"><i class=
+            "fa fa-envelope-o fa-fw"></i> mohajerani<i class=
+            "fa fa-circle" style="font-size: 15%;"></i>d<i class=
+            "fa fa-at fa-fw"></i>gmail<i class="fa fa-circle"
+            style="font-size: 15%;"></i>com</h2>
+          </div>
+        </header><br>
+        <br>
+        <div class="service-item">
+          <h2 class="text-center text-danger"><b>*** DISCLAIMER
+          ***</b></h2>
+          <p></p>
+          <ul>
+            <li>Opinions expressed on this blog are my own and do
+            not reflect the ones of any employers in past, present,
+            or future.</li>
+            <li>This is a <b>*TECHNICAL*</b> blog and I intend to
+            keep it that way. My primary objective for writing this
+            blog is to have a <b>*USEFUL*</b> collection of ideas
+            and techniques related to software engineering, HPC,
+            parallel algorithms, and low-level implementation.</li>
+            <li>I make no warranty and take no responsibility with
+            the way this information is used.</li>
+          </ul>
+          <p></p>
+        </div>
+        <hr>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 text-left"></div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+  <!--=================================================================-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <p class="big"></p>
+          <h3><strong>Contact Info:</strong></h3>
+          <p></p>
+          <p><i class="fa fa-envelope-o fa-fw"></i>
+          mohajerani<i class="fa fa-circle" style=
+          "font-size: 15%;"></i>d<i class=
+          "fa fa-at fa-fw"></i>gmail<i class="fa fa-circle" style=
+          "font-size: 15%;"></i>com<br></p>
+          <ul class="list-inline">
+            <!-- ################################### -->
+            <li>
+              <a href="https://github.com/parallelistix" target=
+              "_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href=
+              "https://scholar.google.com/citations?user=14e042YAAAAJ&amp;hl=en"
+              target="_blank"><i class=
+              "ai ai-google-scholar-square ai-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="https://twitter.com/parallelistix" target=
+              "_blank"><i class=
+              "fa fa-twitter fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <li>
+              <a href="http://www.linkedin.com/in/davoodmohajerani"
+              target="_blank"><i class=
+              "fa fa-linkedin fa-fw fa-2x"></i></a>
+            </li><!-- ################################### -->
+            <!--        <li>
+<!==            <a href="skype:?userinfo"
+<!==                    target="_blank"><i class="fa fa-skype fa-fw fa-2x"></i></a>
+<!==        </li>-->
+            <!-- ################################### -->
+          </ul>
+          <hr class="small">
+          <p class="text-center text-primary h4">Copyright © 2020,
+          Davood Mohajerani</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--=================================================================-->
+  <script src="js/jquery.js">
+  </script> 
+  <script src="js/bootstrap.min.js">
+  </script>
+  <!--=====================================================================-->
+  <!--=====================================================================-->
+</body>
+</html>
