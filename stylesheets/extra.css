@@ -1,0 +1,60 @@
+
+html {
+  font-size: 150%; 
+}
+
+.md-typeset h1 {
+  font-size: 2rem; /* Adjust H1 header size */
+}
+.md-typeset h2 {
+  font-size: 1.25rem; /* Adjust H1 header size */
+}
+
+:root {
+    --main-color:#f0f0f0;
+}
+
+body {
+  background-color: var(--main-color); /* A general fallback or for non-Material themes */
+}
+
+/* Style for header */
+.md-header {
+  background-color: var(--main-color);
+}
+
+/* Style for footer */
+.md-footer {
+  background-color: var(--main-color);
+}
+
+/* Style for urls */
+.md-typeset a {
+  text-decoration: none;
+}
+
+/* Style for the checked checkboxes */
+.md-typeset .task-list-control > [type="checkbox"]:checked + .task-list-indicator::before {
+    background-color: darkblue; /* Your desired color */
+}
+
+/* Style for horizontal line */
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid darkblue; /* Change to your desired style */
+  width: 50%;   /* Adjust the width as needed (e.g., 200px or 50%) */
+  margin-left: 0px;
+}
+
+.md-typeset h1 {
+    margin-bottom: 1rem; /* Removes default space */
+}
+
+.md-typeset h2 {
+    margin-bottom: 1rem; /* Removes default space */
+}
+
+/* Constrain text width for readability */
+.md-grid {
+    max-width: 65%; /* Example value, adjust as needed */
+}
