@@ -56,5 +56,5 @@ body {
 
 /* Constrain text width for readability */
 .md-grid {
-    max-width: 65%; /* Example value, adjust as needed */
+  max-width: 65%; /* Example value, adjust as needed */
 }
